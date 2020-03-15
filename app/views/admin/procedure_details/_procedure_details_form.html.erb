@@ -1,0 +1,12 @@
+<%= javascript_include_tag  Ckeditor.cdn_url, 'data-turbolinks-track': 'reload' %>
+
+<div class="food-wraper">
+  <%= semantic_form_for [:admin, @procedure_detail] do |f| %>
+    <%= f.semantic_errors *f.object.errors.keys %>
+    <%= f.inputs do %>
+      <%= f.input :procedure_id, :as => :select, :collection => Procedure.all.collect {|p| [p.title, p.id]} %>
+      <%= f.cktext_area :details, cols: 40, ckeditor: { uiColor: '#AADC6E', toolbar: 'mini' } %>
+    <% end %>
+    <%= f.actions %>
+  <% end %>
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AgricultureInfo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag  Ckeditor.cdn_url, 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="page-container">
+  <!-- Page Sidebar -->
+  <%= render 'shared/sidebar' %>
+  <%= render 'shared/setting_sidebar' %>
+
+  <div class="settings-overlay"></div>
+  <!-- Page Content -->
+  <div class="page-content">
+    <%= render 'shared/secondary_sidebar' %>
+    <!-- Page Header -->
+    <%= render 'shared/header'%>
+    <!-- /Page Header -->
+    <!-- Page Inner -->
+    <div class="page-inner no-page-title">
+      <%= yield %>
+    </div><!-- /Page Inner -->
+    <%= render 'shared/chat' %>
+    <%= render 'shared/right_sidebar' %>
+  </div><!-- /Page Content -->
+  </div><!-- /Page Container -->
+  <script src="//code.tidio.co/ig5pcyldq53fep3qf1an6rmyqos69pdz.js" async> </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<div class="col-lg-4">
+  <div class="mailbox-menu">
+    <ul class="list-unstyled">
+      <% @crop.procedures.each do |procedure| %>
+        <li>
+          <%= link_to procedure_details_crops_path(details: procedure.id), remote: true do %>
+            <%= procedure.title %>
+            habib
+          <% end %>
+        </li>
+      <% end %>
+<!--      <li><a href="#" class="active"><i class="icon-inbox"></i>BD Rice 01</a></li>-->
+<!--      <li><a href="#"><i class="icon-send"></i>BD Rice Disease 3</a></li>-->
+<!--      <li><a href="#"><i class="icon-mail_outline"></i>BD Rice Harvesting</a></li>-->
+<!--      <li><a href="#"><i class="icon-error"></i>Bd Rice Land</a></li>-->
+      <li class="divider"></li>
+    </ul>
+  </div>
+</div>
+
+<div class="col-lg-7">
+  <div class="mail-container">
+    <div class="mail-text" id="procedure-details"></div>
+  </div>
+</div>

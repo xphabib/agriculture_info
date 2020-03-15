@@ -1,0 +1,101 @@
+<div class="secondary-sidebar">
+  <div class="secondary-sidebar-bar">
+    <a href="#" class="logo-box">concept</a>
+  </div>
+  <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="secondary-sidebar-menu" style="overflow: hidden; width: auto; height: 100%;">
+    <ul class="accordion-menu">
+      <li>
+        <a href="index.html">
+          <i class="menu-icon icon-home4"></i><span>Crops data</span>
+        </a>
+      </li>
+
+      <li class="active-page open">
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-apps"></i><span>Crops</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: block;">
+          <% @categories.each do |category| %>
+            <li class="animation">
+              <%= link_to crops_path(category: category.id), class: 'active' do%>
+                <%= category.name %>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+
+      <li class="active-page open">
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-apps"></i><span>Fisheries</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: block;">
+          <li class="animation"><a href="" class="active">Cereal Crops</a></li>
+          <li class="animation"><a href="app-todo.html">Tuber Crops</a></li>
+          <li class="animation"><a href="app-contacts.html">Oilseed Crops</a></li>
+          <li class="animation"><a href="app-profile.html">Pulse Crops</a></li>
+        </ul>
+      </li>
+
+      <li class="active-page open">
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-apps"></i><span>Suitable Crops Zone</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: block;">
+          <li class="animation"><a href="#" class="active">Sub1</a></li>
+        </ul>
+      </li>
+
+
+      <li class="active-page open">
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-apps"></i><span>Crops Zone</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: block;">
+          <li class="animation"><a href="#" class="active">Sub1</a></li>
+        </ul>
+      </li>
+
+      <li class="active-page open">
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-apps"></i><span>Crops Zone Data</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: block;">
+          <li class="animation"><a href="#" class="active">Sub1</a></li>
+        </ul>
+      </li>
+
+      <li class="active-page open">
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-apps"></i><span>Agriculture Service</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: block;">
+          <li class="animation"><a href="#" class="active">Sub1</a></li>
+        </ul>
+      </li>
+
+      <li class=active-page open>
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-layers"></i><span>Live Stock</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: none;">
+          <li class=""><a href="layout-blank.html">Blank Page</a></li>
+          <li class=""><a href="layout-collapsed-sidebar.html">Collapsed Sidebar</a></li>
+          <li class=""><a href="layout-fixed-header.html">Fixed Header</a></li>
+          <li class=""><a href="layout-fixed-sidebar.html">Fixed Sidebar</a></li>
+          <li class=""><a href="layout-fixed-sidebar-header.html">Fixed Sidebar &amp; Header</a></li>
+        </ul>
+      </li>
+
+
+      <li class="active-page open">
+        <a href="javascript:void(0)">
+          <i class="menu-icon icon-apps"></i><span>About</span><i class="accordion-icon fas fa-angle-left"></i>
+        </a>
+        <ul class="sub-menu" style="display: block;">
+          <li class="animation"><a href="#" class="active">Sub1</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 6px; position: absolute; top: 0px; opacity: 0.2; display: none; border-radius: 0px; z-index: 99; right: 0px; height: 312px;"></div><div class="slimScrollRail" style="width: 6px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 0px;"></div></div>
+</div>

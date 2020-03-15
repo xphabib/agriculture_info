@@ -1,0 +1,27 @@
+<div id="main-wrapper">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="mailbox-options d-flex align-items-center">
+        <% @crops.each do |crop| %>
+          <%= link_to crop.name, crop_path(crop), class: 'btn btn-primary m-r-xxs', remote: true%>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="mailbox-search">
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search mailbox" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon1">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
+<div class="row" id="crops_procedure">
+
+</div><!-- Main Wrapper -->
